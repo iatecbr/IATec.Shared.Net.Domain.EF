@@ -19,7 +19,7 @@ steps:
     inputs:
       targetType: 'inline'
       script: |
-        Rename-Item -Path "NuGet.Config.Pipeline" -NewName "NuGet.Config"
+        Rename-Item -Path '**/NuGet.Config.Pipeline' -NewName 'NuGet.Config'
 
   - task: replacetokens@6
     displayName: 'Replace variables in NuGet.Config'
@@ -36,7 +36,7 @@ steps:
     inputs:
       targetType: 'inline'
       script: |
-        $version = [xml](Get-Content  src/IATec.Shared.Domain.csproj)
+        $version = [xml](Get-Content  src/IATec.Shared.Domain.EF.csproj)
         $packageVersion = $version.Project.PropertyGroup.Version
         Write-Host "##vso[task.setvariable variable=packageVersion]$packageVersion"
     displayName: 'Get project version'
@@ -48,7 +48,7 @@ steps:
     inputs:
       displayName: 'Pack nuGet package'
       command: pack
-      packagesToPack: '**/IATec.Shared.Domain.csproj'
+      packagesToPack: '**/IATec.Shared.Domain.EF.csproj'
       packDestination: '$(Build.ArtifactStagingDirectory)'
       versioningScheme: byEnvVar
       versionEnvVar: packageVersion
