@@ -19,7 +19,7 @@ steps:
     inputs:
       targetType: 'inline'
       script: |
-        Rename-Item -Path '**/NuGet.Config.Pipeline' -NewName 'NuGet.Config'
+        Rename-Item -Path '**\NuGet.Config.Pipeline' -NewName 'NuGet.Config'
 
   - task: replacetokens@6
     displayName: 'Replace variables in NuGet.Config'
