@@ -11,7 +11,9 @@ pool:
   name: IATec-Builds-Agents
 
 variables:
-  buildConfiguration: 'Release'
+  - group: nuget-credentials
+  - name: buildConfiguration
+    value: 'Release'
 
 steps:
   - task: PowerShell@2
