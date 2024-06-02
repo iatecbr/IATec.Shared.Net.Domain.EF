@@ -16,12 +16,10 @@ variables:
     value: 'Release'
 
 steps:
-  - task: PowerShell@2
-    displayName: 'Rename NuGet.Config.Pipeline'
+  - task: CmdLine@2
+    displayName: 'Rename NuGet.Config.Pipeline To NuGet.Config'
     inputs:
-      targetType: 'inline'
-      script: |
-        Rename-Item -Path 'NuGet.Config.Pipeline' -NewName 'NuGet.Config'
+      script: 'rename $(Build.SourcesDirectory)\NuGet.Config.Pipeline NuGet.Config'
 
   - task: replacetokens@6
     displayName: 'Replace variables in NuGet.Config'
