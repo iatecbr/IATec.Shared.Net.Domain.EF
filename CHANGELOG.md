@@ -15,7 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Updated package version from `1.2.0` to `1.3.0`.
 - Bumped `IATec.Shared.Domain` dependency from `1.2.0` to `2.0.0`.
 
-## [1.2.0] - 2024-XX-XX
+## [1.2.0] - 2026-01-12
 
 ### CHANGED
 - Updated project to target **.NET 10** alongside .NET 8 and .NET 9.
@@ -23,7 +23,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [1.0.0] - 2024-XX-XX
+## [1.0.0] - 2025-08-11
 
 ### ADDED
 - Initial stable release of the package.
@@ -35,7 +35,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [0.2.1] and earlier
+## [0.2.1] and earlier - 2024-06-01
 
 ### ADDED
 - Started the project with core EF domain contracts (`IUnitOfWork`, `ITransaction`, `IReadRepository<T>`, `IWriteRepository<T>`, `IGenericRepositoryQuery`).
