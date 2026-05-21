@@ -57,7 +57,7 @@ public class MyService
 
 ## Dependencies
 
-- `IATec.Shared.Domain` (v1.2.0)
+- `IATec.Shared.Domain` (v2.0.0)
 
 ## License
 
