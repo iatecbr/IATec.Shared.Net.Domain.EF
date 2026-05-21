@@ -69,4 +69,4 @@ See the [CHANGELOG](CHANGELOG.md) file for a detailed history of changes, includ
 
 ## Contributing
 
-This package is maintained by the **IATec | Solution | Platform Team**. For questions or suggestions, reach out through the internal development channels.
+This package is maintained by the **IATec Solutions | Platform Team**. For questions or suggestions, reach out through the internal development channels.
